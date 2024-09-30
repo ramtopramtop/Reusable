@@ -6,7 +6,7 @@ const fn = () => {
   newObject.name = 'Вася';
   anotherObject.name = 'Петя';
   const oneMoreObject = { name: 'Полкан', };
-  anotherObject = oneMoreObject;  
+  anotherObject = oneMoreObject;
 };
 
 module.exports = { fn };
