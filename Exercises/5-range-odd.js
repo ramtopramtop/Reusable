@@ -1,18 +1,14 @@
 'use strict';
 
 const rangeOdd = (start, end) => {
-  if (end < start) return [];
-  const Arr = Array(end - start + 1);
-  if (Math.trunk(start / 2) * 2 == start) { let i = 0 }
-  else { let i = 1; }
-  //console.log(start);
-  //console.log(end);
-  //console.log(Arr);
-  for (let i = 0; i <= end - start; i=i+2) {
-    //  console.log(i);
-    Arr[i] = start + i;
+  let i=start;
+  if (2*Math.trunc(start/2) == start) { i = start+1 }
+  if (end < i) return [];
+  const Arr = [];
+  for (i; i <= end; i = i + 2) {
+    Arr.push(i);
   }
   return Arr;
 };
-
+console.log(rangeOdd(0,0));
 module.exports = { rangeOdd };
