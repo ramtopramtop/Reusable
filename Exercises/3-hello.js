@@ -1,7 +1,7 @@
 'use strict';
 
-const hello = (name)=>{
-    console.log(`Приыет ${name}`);
+const hello = (name) => {
+  console.log(`Привет ${name}`);
 };
 
 module.exports = { hello };
