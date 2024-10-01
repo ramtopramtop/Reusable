@@ -7,9 +7,9 @@ const phonebook = [
 ];
 
 const findPhoneByName = (name) => {
-  for (let rec of phonebook) {
+  for (const rec of phonebook) {
     if (name === rec.name) return rec.phone;
-  };
+  }
 };
 
 module.exports = { phonebook, findPhoneByName };
